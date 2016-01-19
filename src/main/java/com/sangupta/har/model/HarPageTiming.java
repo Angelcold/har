@@ -29,4 +29,11 @@ public class HarPageTiming {
 	
 	public String comment;
 
+	@Override
+	public String toString() {
+		return "HarPageTiming [onContentLoad=" + onContentLoad + ", onLoad=" + onLoad + ", comment=" + comment + "]";
+	}
+	
+	
+
 }

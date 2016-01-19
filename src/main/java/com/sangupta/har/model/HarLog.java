@@ -25,7 +25,7 @@ import java.util.List;
 
 public class HarLog {
 	
-	public static final String DEFAULT_HAR_VERSION = "1.1";
+	public static final String DEFAULT_HAR_VERSION = "1.2";
 	
 	public String version = DEFAULT_HAR_VERSION;
 	
@@ -38,5 +38,13 @@ public class HarLog {
 	public List<HarEntry> entries;
 	
 	public String comment;
+
+	@Override
+	public String toString() {
+		return "HarLog [version=" + version + ", creator=" + creator + ", browser=" + browser + ", pages=" + pages
+				+ ", entries=" + entries + ", comment=" + comment + "]";
+	}
+	
+	
 
 }

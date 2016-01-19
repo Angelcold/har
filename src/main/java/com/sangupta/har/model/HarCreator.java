@@ -28,10 +28,12 @@ public class HarCreator {
 	public String version;
 	
 	public String comment;
-	
+
 	@Override
 	public String toString() {
-		return "[Creator: " + this.name + " (" + this.version + ") ]";
+		return "HarCreator [name=" + name + ", version=" + version + ", comment=" + comment + "]";
 	}
+	
+	
 
 }

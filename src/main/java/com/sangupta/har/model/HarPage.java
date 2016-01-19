@@ -37,9 +37,12 @@ public class HarPage {
 	
 	public transient List<HarEntry> entries;
 	
+	
+
 	@Override
 	public String toString() {
-		return "[Page: " + this.id + " (" + this.title + ") ]";
+		return "HarPage [startedDateTime=" + startedDateTime + ", id=" + id + ", title=" + title + ", pageTimings="
+				+ pageTimings + ", comment=" + comment + "]";
 	}
 
 	@Override

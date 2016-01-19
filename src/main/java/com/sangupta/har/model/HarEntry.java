@@ -21,8 +21,6 @@
 
 package com.sangupta.har.model;
 
-import com.sangupta.jerry.util.UriUtils;
-
 public class HarEntry implements Comparable<HarEntry> {
 
 	public String pageref;
@@ -45,10 +43,16 @@ public class HarEntry implements Comparable<HarEntry> {
 	
 	public String comment;
 	
+	
+
 	@Override
 	public String toString() {
-		return request.method + " " + UriUtils.extractPath(request.url);
+		return "HarEntry [pageref=" + pageref + ", startedDateTime=" + startedDateTime + ", time=" + time + ", request="
+				+ request + ", response=" + response + ", cache=" + cache + ", timings=" + timings
+				+ ", serverIPAddress=" + serverIPAddress + ", connection=" + connection + ", comment=" + comment + "]";
 	}
+
+
 
 	@Override
 	public int compareTo(HarEntry o) {
