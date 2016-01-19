@@ -9,7 +9,7 @@ import com.sangupta.har.model.Har;
 public class HarTest {
 
 	public static void main(String[] args) throws JsonSyntaxException, IOException {
-		File file = new File("/Users/sangupta/Desktop/stage.aedash.adobe.com.har");
+		File file = new File("/Users/wuxian/Desktop/interface/www.baidu.com.har");
 		Har har = HarUtils.read(file);
 		System.out.println("created by: " + har.log.creator.name);
 	}
